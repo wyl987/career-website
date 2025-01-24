@@ -1,6 +1,6 @@
 from flask import Flask, render_template, jsonify
 
-app = Flask(__name__)
+flask_app = Flask(__name__)
 
 JOBS = [
   {
@@ -29,14 +29,14 @@ JOBS = [
   }
 ]
 
-@app.route("/")
+@flask_app.route("/")
 def hello_world():
   return render_template('home.html', 
                          jobs=JOBS)
 
-@app.route("/api/jobs")
+@flask_app.route("/api/jobs")
 def list_jobs():
   return jsonify(JOBS)
 
 if __name__ == "__main__":
-  app.run(host='0.0.0.0', debug=True)
+  flask_app.run(host='0.0.0.0', debug=True)
