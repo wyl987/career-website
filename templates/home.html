@@ -10,13 +10,19 @@
   </head> 
   
   <body>
+    {% include 'nav.html' %}
+    <img class="img-fluid" id="banner" src="static/banner.jpg" alt="banner">
     <div class="container my-4">
       <h1 class="text-center h1 my-4">Career Website</h1>
-      <img class="img-fluid" id="banner" src="static/banner.jpg" alt="banner">
-      <div id="about">
-        <h2 class="text-center h2 my-4">About Career Website</h2>
-        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus laborum labore aliquid consequuntur accusantium quibusdam omnis unde, optio voluptatem molestiae sit aliquam similique tenetur et laudantium animi doloremque dolorem quas
-        </p>
+      
+      <div class="row">
+        <div class="col-md-6">
+          <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus laborum labore aliquid consequuntur accusantium quibusdam omnis unde, optio voluptatem molestiae sit aliquam similique tenetur et laudantium animi doloremque dolorem quas
+          </p>
+        </div>
+        <div class="d-none d-md-block col-md-6">
+           <img class="img-fluid" src="static/about.jpg" alt="photo">
+        </div>
       </div>
       <div id="opening">
         <h2 class="text-center h2 my-4">Job Openings</h2>
@@ -27,8 +33,11 @@
         </div>
       </div>
       <div class="text-center">
-        <button class="btn btn-primary btn-lg">Contact Us</button>
+        <a class="btn btn-primary btn-lg" href="mailto:abc@careerwebsite.com?subject=Questions%20about%20jobs%20openings">
+          Contact Us
+        </a>
       </div>
     </div>
+    {% include 'footer.html' %}
   </body>
 </html>
