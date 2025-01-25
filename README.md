@@ -5,5 +5,5 @@ HTML, CSS and Bootstrap
 Flask
 Replit (Cloud platform)
 Cloud deployment (render.com)
-Cloud Database (Planet Scale)
+Cloud Database (AWS RDS)
 SQL Alchemy
