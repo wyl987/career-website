@@ -3,7 +3,7 @@ from database import load_jobs_from_db
 
 flask_app = Flask(__name__)
 
-flask_app.route("/")
+@flask_app.route("/")
 def hello_world():
   jobs = load_jobs_from_db()
   return render_template('home.html', 

@@ -1,6 +1,11 @@
 from sqlalchemy import create_engine, text
+import os
+from dotenv import load_dotenv
 
-engine = create_engine("mysql+pymysql://admin:aWfRDVV4WNOSoaOQ8uQ7@career-website.czame0giewij.ap-southeast-2.rds.amazonaws.com/careerwebsite?charset=utf8mb4")
+load_dotenv()
+db_connection_string = os.getenv('DB_CONNECTION_STRING')
+
+engine = create_engine(db_connection_string)
 
 def load_jobs_from_db():
   with engine.connect() as conn:
