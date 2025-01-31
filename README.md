@@ -13,7 +13,7 @@ A dynamic career website that displays job listings from a cloud-hosted database
 - **HTML, CSS, and Bootstrap**: Frontend design and styling.
 - **Flask**: Python-based web framework used to build the application.
 - **Cloud Deployment (Render)**: Hosting the application in the cloud for public access.
-- **Cloud Database (AWS RDS)**: Storing job and application data in a cloud-hosted PostgreSQL database.
+- **Cloud Database (AWS RDS)**: Storing job and application data in a cloud-hosted MySQL database.
 - **SQLAlchemy**: ORM used for database interactions in Python, making it easier to handle SQL queries.
 
 ## Live Demo
