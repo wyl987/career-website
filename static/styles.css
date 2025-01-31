@@ -1,8 +1,11 @@
 body {
   font-family: Roboto;
 }
-#banner{
+#banner {
   width: 100%;
   height: 320px;
   object-fit: cover;
+}
+.custom-min-width {
+  min-width: 280px;
 }

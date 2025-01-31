@@ -30,3 +30,21 @@ def load_job_from_db(id):
       job = None
   
   return job
+
+def add_application_to_db(job_id, data):
+  try:
+    with engine.connect() as conn:
+      query = text("INSERT into applications (job_id, full_name, email, linkedin_url, resume_url ) VALUES (:job_id, :full_name, :email, :linkedin_url, :resume_url)")
+      
+      conn.execute(query,
+                  {"job_id" : job_id,
+                    "full_name": data["fullname"],
+                    "email": data["email"],
+                    "linkedin_url": data["linkedin_url"],
+                    "resume_url": data["resume_url"]}
+                  )
+      conn.commit()
+      
+  except Exception as e:
+      print(f"An error occurred: {e}")
+  

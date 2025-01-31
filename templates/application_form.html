@@ -1,0 +1,39 @@
+<div class="w-50 mx-auto my-4">
+  <h4 class="text-center mb-4">Application form</h4>
+  <form action="/job/{{job['id']}}/apply" method="post">
+    <div class="mb-2">
+      <label class="mb-1">Full Name</label>
+      <br/>
+      <input type="text" name="fullname" 
+        class="fs-7 w-75 custom-min-width" placeholder="Jacky Chan"/>
+      <br/>
+    </div>
+    
+    <div class="mb-2">
+      <label class="mb-1">Email</label>
+      <br/>
+      <input type="email" name="email" 
+        class="w-75 custom-min-width" placeholder="jackychan@abc.com"/>
+      <br/>
+    </div>
+    
+    <div class="mb-2">
+      <label class="mb-1">LinkedIn URL</label>
+      <br/>
+      <input type="text" name="linkedin_url" 
+        class="fs-7 w-75 custom-min-width" placeholder="https://www.linkedin.com/in/jackychanxx/"/>
+      <br/>
+    </div>
+
+    <div class="mb-2">
+      <label class="mb-1">Resume URL</label>
+      <br/>
+      <input type="text" name="resume_url" 
+        class="fs-7 w-75 custom-min-width"/>
+      <br/>
+    </div>
+
+    <input type="submit">
+    
+  </form>
+</div>
