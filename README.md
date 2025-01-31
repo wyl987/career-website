@@ -21,4 +21,4 @@ Check out the live demo here: [Career Website](https://career-website-gdp4.onren
 
 ## Reference
 This project was built with the guidance of the following tutorial:  
-[Python Flask Career Website](https://www.youtube.com/watch?v=yBDHkveJUf4)
+[Web Development with Python Tutorial – Flask & Dynamic Database-Driven Web Apps](https://www.youtube.com/watch?v=yBDHkveJUf4)
